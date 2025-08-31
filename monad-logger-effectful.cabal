@@ -8,8 +8,19 @@ maintainer:
 copyright:       Copyright (c) 2023-2025 Jack Kelly
 license:         BSD-3-Clause
 build-type:      Simple
+category:        Control
 extra-doc-files: README.md
 tested-with:     GHC ==9.6.7 || ==9.8.4 || ==9.10.2 || ==9.12.2
+synopsis:        effectful support for monad-logger
+description:
+  This package provides integration between the @effectful@ library and
+  @monad-logger@, enabling structured logging within the effectful effects
+  system.
+  .
+  The package defines a @Logger@ effect that can be used with the effectful
+  library, along with orphan instances for @MonadLogger@ and @MonadLoggerIO@
+  that allow existing monad-logger code to work seamlessly with effectful
+  computations.
 
 source-repository head
   type:     git
